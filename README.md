@@ -24,4 +24,4 @@ What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 My implementation of `e` is comprised solely of constant factors. However, since it *is* recursive, it has to run all of those operations multiple times before the execution can cease. More specifically, it will run all of those operations until `n === 0`, where `n` represents the $n\text{th}$ value in approximating Euler's number.
 
-The first call will have `n`, and then the second call will begin with `n - 1`, and then that pattern will continue until `n - n` $ = 0$. That pattern is undeniably linear to the "size" of `n`, because as `n` gets larger `e` will have to decrement more times to reach `n` $= 0$. Therefore, we can conclude that the worst-case runtime complexity of `e` is $\mathrm{\Theta}(n)$.
+The first call will have `n`, and then the second call will begin with `n - 1`, and then that pattern will continue until `n - n` $= 0$. That pattern is undeniably linear to the "size" of `n`, because as `n` gets larger `e` will have to decrement more times to reach `n` $= 0$. Therefore, we can conclude that the worst-case runtime complexity of `e` is $\mathrm{\Theta}(n)$.
